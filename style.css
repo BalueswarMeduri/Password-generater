@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background-color: #0B2447;
+    color: white;
+}
+
+.container {
+    margin: 12%;
+    width: 90%;
+    max-width: 700px;
+}
+
+.display {
+    width: 100%;
+    background-color: white;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 26px 20px;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.container h1 {
+    font-weight: 500;
+    font-size: 45px;
+}
+
+.container h1 span {
+    color: #019f55;
+    border-bottom: 4px solid #019f55;
+    padding: 7px;
+}
+
+.fa-copy {
+    color: #019f55;
+    font-size: 35px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.fa-copy:hover {
+    color: #04d373;
+}
+
+.display input {
+    border: none;
+    font-size: 24px;
+    outline: none;
+    width: 100%;
+}
+
+.fa-bolt {
+    color: white;
+    width: 38px;
+    font-size: 30px;
+}
+
+.container button {
+    color: white;
+    border: 0;
+    outline: none;
+    background-color: #019f55;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 17px 19px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
+.container button:hover {
+    background-color: #04d171;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    body {
+        overflow: hidden;
+    }
+
+    .container h1 {
+        padding-bottom: 20px;
+        padding-top: 190px;
+        font-weight: 500;
+        font-size: 30px;
+    }
+
+    .container h1 span {
+        font-size: 30px;
+        color: #019f55;
+        border-bottom: 4px solid #019f55;
+        padding: 7px;
+    }
+
+    .display {
+        position: relative;
+        width: 100%;
+        background-color: white;
+        color: #333;
+        padding: 20px 16px;
+        border-radius: 10px;
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+    .display input {
+        border: none;
+        font-size: 24px;
+        outline: none;
+    }
+
+    .fa-copy {
+        /* padding-right: 50px; */
+        color: #019f55;
+        font-size: 35px;
+        cursor: pointer;
+        transition: 0.4s;
+        position: absolute;
+        left: 85%;
+    }
+    .container {
+        margin: 5%;
+        width: 90%;
+        max-width: 700px;
+    }
+}
